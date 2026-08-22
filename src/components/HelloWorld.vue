@@ -1,10 +1,17 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import viteLogo from '../assets/vite.svg'
 import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
 
-const count = ref(0)
+const count = ref(0);
+
+const isCountEven = computed(() => count.value % 2 === 0 ? 'even' : 'odd');
+
+function increment()
+{
+  count.value++;
+}
 </script>
 
 <template>
@@ -18,9 +25,12 @@ const count = ref(0)
       <h1>Get started</h1>
       <p>Edit <code>src/App.vue</code> and save to test <code>HMR</code></p>
     </div>
-    <button type="button" class="counter" @click="count++">
+    <button type="button" class="counter" @click="increment">
       Count is {{ count }}
     </button>
+    <p>
+      Count is {{ isCountEven}}
+    </p>
   </section>
 
   <div class="ticks"></div>
