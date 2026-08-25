@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 1.2;
   color: black;
 }
@@ -29,6 +29,28 @@ img {
   row-gap: 0.5rem;
 }
 
+.experience {
+  padding: 2rem;
+  border-style: outset;
+  border-width: 10px 1px 1px 1px;
+  border-color: red;
+  border-radius: 20px;
+}
+
+.experience__bullet {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+.experience__employer {
+  margin-bottom: 1.5rem
+}
+
+.experience__title {
+  font-size: 1.728rem;
+  margin-bottom: 0.5rem;
+}
+
 .hero__button {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -41,12 +63,13 @@ img {
 
 .hero__title {
   text-align: center;
-  font-size: 2.2857142857rem
+  font-size: 2.986rem;
+  font-weight: bold;
 }
 
 .hero__subtitle {
   text-align: center;
-  font-size: 2.2857142857rem
+  font-size: 2.986rem;
 }
 
 .hero__paragraph {
@@ -60,7 +83,7 @@ img {
 
 .skills {
   background-color: black;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .skills__item {
@@ -71,7 +94,8 @@ img {
 }
 
 .skills__title {
-  font-size: 1.7142857143rem;
+  font-size: 1.728rem;
+  margin-bottom: 1rem;
   color: #fffffe;
 }
 
