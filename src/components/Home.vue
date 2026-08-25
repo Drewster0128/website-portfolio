@@ -4,27 +4,29 @@ import heroImg from "../assets/hero.png"
 
 <template>
     <!-- hero -->
-     <section class="hero">
-        <div class="hero__title">
-            <h1>Andrew Cook</h1>
-            <h2>IIT 2026</h2>
+     <section class="container container--column hero">
+        <div class="row">
+            <h1 class="hero__title">Andrew Cook</h1>
+            <h2 class="hero__subtitle">IIT 2026</h2>
         </div>
-        <p class="hero__paragraph">
-            [Template] Computer Science graduate specializing in scalable data architectures, machine learning models, and complex algorithmic problem-solving. Architecting solutions from raw data to actionable intelligence.
-        </p>
-        <div>
+        <div class="row">
+            <p class="hero__paragraph">
+                [Template] Computer Science graduate specializing in scalable data architectures, machine learning models, and complex algorithmic problem-solving. Architecting solutions from raw data to actionable intelligence.
+            </p>
+        </div>
+        <div class="container container--row row">
             <button class="hero__button">Work Experience</button>
-            <button class="hero__button">Projects</button>
+            <button class="hero__button hero__button--black">Projects</button>
         </div>
      </section>
     <!-- profile picture -->
-    <section class="profile_pic">
-        <img :src="heroImg">
+    <section>
+        <img class="profile_pic" :src="heroImg">
     </section>
     <!-- skills -->
     <section class="skills">
-        <h3>Skills</h3>
-        <ul>
+        <h3 class="skills__title">Skills</h3>
+        <ul class="container container--row container--wrap">
             <li class="skills__item">Data Structures</li>
             <li class="skills__item">Web Design</li>
             <li class="skills__item">Databases</li>
