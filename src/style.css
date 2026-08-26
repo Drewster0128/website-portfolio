@@ -133,8 +133,16 @@ section {
   background-color: #201f1f;
 }
 
+.hero__title--left_align {
+  text-align: left;
+}
+
 .hero__title--red {
   color: #ffb3af;
+}
+
+.hero__paragraph--left_align {
+  text-align: left;
 }
 
 .hero__paragraph--red {
