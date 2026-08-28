@@ -3,7 +3,7 @@ import heroImg from "../assets/hero.png"
 </script>
 
 <template>
-    <div class="page">
+    <div class="page page--circuit_board">
         <!-- hero -->
         <section class="container container--column hero">
             <div class="row">
@@ -15,7 +15,7 @@ import heroImg from "../assets/hero.png"
                     [Template] Computer Science graduate specializing in scalable data architectures, machine learning models, and complex algorithmic problem-solving. Architecting solutions from raw data to actionable intelligence.
                 </p>
             </div>
-            <div class="container container--row row">
+            <div class="container container--row container--center">
                 <button class="hero__button">Work Experience</button>
                 <button class="hero__button hero__button--black">Projects</button>
             </div>
