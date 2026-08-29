@@ -32,8 +32,8 @@ const projects = [
 <template>
     <div class="page page--circuit_board">
         <section class="hero">
-            <h1 class="hero__title hero__title--red hero__title--left_align">Projects</h1>
-            <p class="hero__paragraph hero__paragraph--left_align hero__paragraph--red">
+            <h1 class="hero__title hero__title--red-on-white hero__title--left_align">Projects</h1>
+            <p class="hero__paragraph hero__paragraph--left_align">
                 [Template] A collection of personal experiments, machine learning models, and data visualization tools exploring complex datasets and algorithmic solutions
             </p>
         </section>

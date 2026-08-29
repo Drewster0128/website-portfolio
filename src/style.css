@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --gray-on-white-heading-text-color: #757575;
+  --gray-on-white-body-text-color: #595959;
+  --red-on-black-body-text-color: #F68D99;
+  --red-on-black-heading-text-color: #F1465A;
+  --red-on-white-body-text-color: #AD1A00;
+  --red-on-white-heading-text-color: #E9162E;
+  --red-on-white-border-color: #F16575;
+  --brown-on-white-body-text-color: #705029;
+}
 
 * {
-  font-family: sans-serif;
+  font-family: "Plus Jakarta Sans", 'sans-serif';
   font-size: 16px;
   line-height: 1.2;
   color: black;
@@ -61,12 +73,12 @@ section {
 .experience__bullet {
   list-style: disc;
   margin-left: 1rem;
-  color: #e9bcb9;
+  color: var(--red-on-black-body-text-color);
 }
 
 .experience__employer {
   margin-bottom: 1.5rem;
-  color: #e9bcb9;
+  color: var(--red-on-black-body-text-color);
 }
 
 .experience__title {
@@ -80,7 +92,7 @@ section {
   padding-right: 1.25rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #ff0033;
+  background-color: var(--red-on-white-heading-text-color);
   border-radius: 20px;
   color: white;
   margin-top: 3rem;
@@ -90,19 +102,19 @@ section {
   text-align: center;
   font-size: 2.986rem;
   font-weight: bold;
-  color: #a79d99;
+  color: var(--gray-on-white-heading-text-color);
 }
 
 .hero__subtitle {
   text-align: center;
   font-size: 2.986rem;
   font-weight: bold;
-  color: #90001a;
+  color: var(--red-on-white-heading-text-color);
 }
 
 .hero__paragraph {
   text-align: center;
-  color: #a79d99;
+  color: var(--gray-on-white-body-text-color);
 }
 
 .page > * {
@@ -126,7 +138,7 @@ section {
 }
 
 .project__bullet {
-  color: #e9bcb9;
+  color: var(--gray-on-white-body-text-color);
   list-style: disc;
   margin-left: 1rem;
 }
@@ -136,7 +148,7 @@ section {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #b08784;
+  color: var(--brown-on-white-body-text-color);
 }
 
 .project__repo {
@@ -144,15 +156,15 @@ section {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ffb3af;
+  color: var(--red-on-white-body-text-color);
 }
 
 .project__technology {
-  color: #ffb3af;
+  color: var(--red-on-white-body-text-color);
   padding: 0rem 0.5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #ffe9e8;
+  border-color: var(--red-on-white-border-color);
   background-color: #fff7f7;
   border-radius: 5px;
   font-family: "Chathura", 'sans-serif';
@@ -163,7 +175,7 @@ section {
 
 .project__title {
   font-size: 1.728rem;
-  color: #a79d99;
+  color: var(--gray-on-white-heading-text-color);
   margin-bottom: 1rem;
 }
 
@@ -199,16 +211,20 @@ section {
   text-align: left;
 }
 
-.hero__title--red {
-  color: #ff0033;
+.hero__title--red-on-black {
+  color: var(--red-on-black-heading-text-color);
+}
+
+.hero__title--red-on-white {
+  color: var(--red-on-white-heading-text-color)
 }
 
 .hero__paragraph--left_align {
   text-align: left;
 }
 
-.hero__paragraph--red {
-  color: #e9bcb9;
+.hero__paragraph--red-on-black {
+  color: var(--red-on-black-body-text-color);
 }
 
 .hero__button--black {
