@@ -10,6 +10,7 @@
   --red-on-white-heading-text-color: #E9162E;
   --red-on-white-border-color: #F16575;
   --brown-on-white-body-text-color: #705029;
+  --black-background-color: #201f1f;
 }
 
 * {
@@ -33,6 +34,14 @@ section {
   display: flex;
 }
 
+.column--flex {
+  flex: 1;
+}
+
+.column--end {
+  text-align: end;
+}
+
 .container--between {
   justify-content: space-between;
 }
@@ -44,6 +53,10 @@ section {
 
 .container--center {
   justify-content: center;
+}
+
+.container--align_end {
+  align-items: flex-end;
 }
 
 .container--row {
@@ -67,7 +80,7 @@ section {
   border-width: 10px 1px 1px 1px;
   border-color: #ff0033;
   border-radius: 20px;
-  background-color: #201f1f;
+  background-color: var(--black-background-color);
 }
 
 .experience__bullet {
@@ -115,6 +128,30 @@ section {
 .hero__paragraph {
   text-align: center;
   color: var(--gray-on-white-body-text-color);
+}
+
+.header {
+  background-color: var(--black-background-color);
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.nav__title {
+  color: var(--red-on-black-body-text-color);
+  font-size: 1.728rem;
+}
+
+.nav__item {
+  color: var(--red-on-black-body-text-color);
+}
+
+.nav__item--resume {
+  text-align: end;
+  color: var(--black-background-color);
+  background-color: var(--red-on-black-heading-text-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
 }
 
 .page > * {
@@ -180,7 +217,7 @@ section {
 }
 
 .skills {
-  background-color: #201f1f;
+  background-color: var(--black-background-color);
   border-radius: 20px;
   padding: 2rem;
 }
@@ -204,7 +241,7 @@ section {
 }
 
 .work_experience {
-  background-color: #201f1f;
+  background-color: var(--black-background-color);
 }
 
 .hero__title--left_align {
@@ -228,11 +265,11 @@ section {
 }
 
 .hero__button--black {
-  background-color: #201f1f;
+  background-color: var(--black-background-color);
 }
 
 .page--black {
-  background-color: #201f1f;
+  background-color: var(--black-background-color);
 }
 
 .page--circuit_board {

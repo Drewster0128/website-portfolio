@@ -3,6 +3,20 @@ import heroImg from "../assets/hero.png"
 </script>
 
 <template>
+    <header class="header container container--row container--between container--align_end">
+        <div class="column column--flex">
+            <h2 class="nav__title">Andrew Cook</h2>
+        </div>
+        <nav class="nav column column--flex container container--row container--center">
+            <a class="nav__item" href="">Home</a>
+            <a class="nav__item" href="">Work</a>
+            <a class="nav__item" href="">Projects</a>
+            <a class="nav__item" href="">Contact</a>
+        </nav>
+        <div class="column column--flex column--end">
+            <a class="nav__item nav__item--resume" href="">Resume</a>
+        </div>
+    </header>
     <div class="page page--circuit_board">
         <!-- hero -->
         <section class="container container--column hero">
