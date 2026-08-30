@@ -6,7 +6,10 @@ const props = defineProps(['title', 'bullets', 'technologies', 'status', 'repo']
 
 <template>
     <article class="project">
-        <h2 class="project__title">{{ props.title }}</h2>
+        <div class="container container--row container--between container--align_center container--mb-1">
+            <h2 class="project__title">{{ props.title }}</h2>
+            <i class="project__icon bi bi-code"></i>
+        </div>
         <ul class="container container--column">
             <li class="project__bullet" v-for="bullet in props.bullets">
                 {{ bullet }}

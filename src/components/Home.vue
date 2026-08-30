@@ -30,8 +30,14 @@ import heroImg from "../assets/hero.png"
                 </p>
             </div>
             <div class="container container--row container--center">
-                <button class="hero__button">Work Experience</button>
-                <button class="hero__button hero__button--black">Projects</button>
+                <button class="hero__button container container--row container--align_center">
+                    Work Experience
+                    <i class="button__icon bi bi-arrow-right-short"></i>
+                </button>
+                <button class="hero__button hero__button--black container container--row container--align_center">
+                    Projects
+                    <i class="button__icon bi bi-terminal"></i>
+                </button>
             </div>
         </section>
         <!-- profile picture -->
@@ -40,7 +46,10 @@ import heroImg from "../assets/hero.png"
         </section>
         <!-- skills -->
         <section class="skills">
-            <h3 class="skills__title">Skills</h3>
+            <div class="container container--row container--between container--align_center container--mb-1">
+                <h3 class="skills__title">Skills</h3>
+                <i class="skills__icon bi bi-cpu"></i>
+            </div>
             <ul class="container container--row container--wrap">
                 <li class="skills__item">Data Structures</li>
                 <li class="skills__item">Web Design</li>

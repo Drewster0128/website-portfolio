@@ -26,8 +26,13 @@ img {
 
 section {
   max-width: 800px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.button__icon {
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 
 .container {
@@ -59,6 +64,14 @@ section {
   align-items: flex-end;
 }
 
+.container--align_baseline {
+  align-items: baseline;
+}
+
+.container--align_center {
+  align-items: center;
+}
+
 .container--row {
   flex-direction: row;
   column-gap: 1rem;
@@ -67,6 +80,10 @@ section {
 .container--pad {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.container--mb-1 {
+  margin-bottom: 1rem;
 }
 
 .container--wrap {
@@ -92,6 +109,11 @@ section {
 .experience__employer {
   margin-bottom: 1.5rem;
   color: var(--red-on-black-body-text-color);
+}
+
+.experience__icon {
+  color: #ff0033;
+  font-size: 1.5rem;
 }
 
 .experience__title {
@@ -154,11 +176,14 @@ section {
   border-radius: 10px;
 }
 
+.page {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .page > * {
   max-width: 800px;
   margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .profile_pic {
@@ -178,6 +203,11 @@ section {
   color: var(--gray-on-white-body-text-color);
   list-style: disc;
   margin-left: 1rem;
+}
+
+.project__icon {
+  font-size: 1.5rem;
+  color: var(--red-on-white-body-text-color);
 }
 
 .project__status {
@@ -213,13 +243,17 @@ section {
 .project__title {
   font-size: 1.728rem;
   color: var(--gray-on-white-heading-text-color);
-  margin-bottom: 1rem;
 }
 
 .skills {
   background-color: var(--black-background-color);
   border-radius: 20px;
   padding: 2rem;
+}
+
+.skills__icon {
+  font-size: 1.5rem;
+  color: var(--red-on-black-heading-text-color);
 }
 
 .skills__item {
@@ -236,7 +270,6 @@ section {
 
 .skills__title {
   font-size: 1.728rem;
-  margin-bottom: 1rem;
   color: #fffffe;
 }
 
