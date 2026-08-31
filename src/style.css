@@ -86,6 +86,16 @@ section {
   margin-bottom: 1rem;
 }
 
+.container--pb-1 {
+  padding-bottom: 2rem;
+}
+
+.container--bb-black {
+  border-bottom: solid;
+  border-color: var(--black-background-color);
+  border-width: 1;
+}
+
 .container--wrap {
   flex-wrap: wrap;
   row-gap: 0.5rem;

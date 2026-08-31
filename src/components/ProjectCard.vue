@@ -15,7 +15,7 @@ const props = defineProps(['title', 'bullets', 'technologies', 'status', 'repo']
                 {{ bullet }}
             </li>
         </ul>
-        <ul class="container container--row container--wrap container--pad">
+        <ul class="container container--row container--wrap container--pad container--bb-black container--mb-1">
             <li class="project__technology" v-for="technology in props.technologies">
                 {{ technology }}
             </li>
