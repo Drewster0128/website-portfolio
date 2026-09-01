@@ -1,23 +1,31 @@
 <script setup>
+import { useIntersectionObserver } from "@vueuse/core";
 import heroImg from "../assets/hero.png"
+import {  ref, useTemplateRef, onMounted } from 'vue';
+
+const target = useTemplateRef("target");
+
+
+/*
+onMounted(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+        isVisible.value = entry.isIntersecting;
+        console.log(isVisible.value);
+    })
+
+    if(target.value)
+    {
+        observer.observe(target.value);
+    }
+})
+*/
+
+defineExpose({target})
+
 </script>
 
 <template>
-    <header class="header container container--row container--between container--align_end">
-        <div class="column column--flex">
-            <h2 class="nav__title">Andrew Cook</h2>
-        </div>
-        <nav class="nav column column--flex container container--row container--center">
-            <a class="nav__item" href="">Home</a>
-            <a class="nav__item" href="">Work</a>
-            <a class="nav__item" href="">Projects</a>
-            <a class="nav__item" href="">Contact</a>
-        </nav>
-        <div class="column column--flex column--end">
-            <a class="nav__item nav__item--resume" href="">Resume</a>
-        </div>
-    </header>
-    <div class="page page--circuit_board">
+    <div class="page page--circuit_board" id="home" ref="target">
         <!-- hero -->
         <section class="container container--column hero">
             <div class="row">
