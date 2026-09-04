@@ -141,6 +141,16 @@ section {
   border-radius: 20px;
   color: white;
   margin-top: 3rem;
+  box-shadow: var(--red-on-white-heading-text-color) 0 1px 1px;
+  top: 0;
+  position: relative;
+  transition: top 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero__button:hover {
+  top: -5px;
+  box-shadow: #E9162E80 0 5px 5px;
+  transition: top 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero__title {
@@ -164,9 +174,25 @@ section {
 
 .header {
   background-color: var(--black-background-color);
-  padding: 2rem;
   position: sticky;
   top: 0;
+  z-index: 1;
+  padding: 1rem 2rem;
+}
+
+.nav__button {
+  display: inline-block;
+  text-align: end;
+  color: var(--black-background-color);
+  background-color: var(--red-on-black-heading-text-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav__button:hover {
+  background-color: #F1465A80;
+  transition: background-color 0.3s ease;
 }
 
 .nav__title {
@@ -193,18 +219,17 @@ section {
   transition: transform 0.3s ease;
 }
 
+.nav__item:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+}
+
 .nav__item--selected::after {
   transform: scaleX(1);
   transition: transform 0.3s ease;
 }
 
-.nav__item--resume {
-  text-align: end;
-  color: var(--black-background-color);
-  background-color: var(--red-on-black-heading-text-color);
-  padding: 0.75rem 1.5rem;
-  border-radius: 10px;
-}
+
 
 .page {
   padding-top: 3rem;
@@ -329,6 +354,11 @@ section {
 
 .hero__button--black {
   background-color: var(--black-background-color);
+  box-shadow: var(--black-background-color) 0 1px 1px;
+}
+
+.hero__button--black:hover {
+  box-shadow: #201f1f80 0 5px 5px;
 }
 
 .page--black {

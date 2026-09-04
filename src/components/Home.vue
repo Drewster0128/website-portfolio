@@ -5,21 +5,6 @@ import {  ref, useTemplateRef, onMounted } from 'vue';
 
 const target = useTemplateRef("target");
 
-
-/*
-onMounted(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-        isVisible.value = entry.isIntersecting;
-        console.log(isVisible.value);
-    })
-
-    if(target.value)
-    {
-        observer.observe(target.value);
-    }
-})
-*/
-
 defineExpose({target})
 
 </script>
@@ -38,14 +23,14 @@ defineExpose({target})
                 </p>
             </div>
             <div class="container container--row container--center">
-                <button class="hero__button container container--row container--align_center">
+                <a href="#work" class="hero__button container container--row container--align_center">
                     Work Experience
                     <i class="button__icon bi bi-arrow-right-short"></i>
-                </button>
-                <button class="hero__button hero__button--black container container--row container--align_center">
+                </a>
+                <a href="#projects" class="hero__button hero__button--black container container--row container--align_center">
                     Projects
                     <i class="button__icon bi bi-terminal"></i>
-                </button>
+                </a>
             </div>
         </section>
         <!-- profile picture -->
