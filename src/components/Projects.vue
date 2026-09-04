@@ -70,7 +70,7 @@ const projects = [
 </script>
 
 <template>
-    <div class="page page--circuit_board" id="projects" ref="target">
+    <div class="page page--circuit_board hidden" id="projects" ref="target">
         <section class="hero container container--column">
             <h1 class="hero__title hero__title--red-on-white hero__title--left_align">Projects</h1>
             <p class="hero__paragraph hero__paragraph--left_align">

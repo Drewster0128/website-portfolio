@@ -10,7 +10,7 @@ defineExpose({target})
 </script>
 
 <template>
-    <div class="page page--circuit_board" id="home" ref="target">
+    <div class="page page--circuit_board hidden" id="home" ref="target">
         <!-- hero -->
         <section class="container container--column hero">
             <div class="row">
