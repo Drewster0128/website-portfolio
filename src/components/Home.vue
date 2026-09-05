@@ -18,9 +18,12 @@ defineExpose({target})
                 <h2 class="hero__subtitle">IIT 2026</h2>
             </div>
             <div class="row">
+                <!--
+                
                 <p class="hero__paragraph">
                     [Template] Computer Science graduate specializing in scalable data architectures, machine learning models, and complex algorithmic problem-solving. Architecting solutions from raw data to actionable intelligence.
                 </p>
+            -->
             </div>
             <div class="container container--row container--center">
                 <a href="#work" class="hero__button container container--row container--align_center">

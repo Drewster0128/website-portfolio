@@ -1,6 +1,7 @@
 <script setup>
 
 const props = defineProps(["active_page"]);
+import Resume from "../assets/AndewSCookResume-Generic-8-21-26.pdf";
 
 
 </script>
@@ -17,7 +18,7 @@ const props = defineProps(["active_page"]);
             <a class="nav__item" href="">Contact</a>
         </nav>
         <div class="column column--flex column--end">
-            <a class="nav__button" target="_blank" href="src/assets/AndewSCookResume-Generic-8-21-26.pdf">Resume</a>
+            <a class="nav__button" target="_blank" :href="Resume">Resume</a>
         </div>
     </header>
 </template>

@@ -73,9 +73,11 @@ const projects = [
     <div class="page page--circuit_board hidden" id="projects" ref="target">
         <section class="hero container container--column">
             <h1 class="hero__title hero__title--red-on-white hero__title--left_align">Projects</h1>
+            <!--
             <p class="hero__paragraph hero__paragraph--left_align">
                 [Template] A collection of personal experiments, machine learning models, and data visualization tools exploring complex datasets and algorithmic solutions
             </p>
+        -->
         </section>
         <section class="container container--column">
             <ProjectCard v-for="project in projects" v-bind="project"/>

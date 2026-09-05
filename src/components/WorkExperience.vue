@@ -38,7 +38,9 @@ const experiences = [
     <div class="page page--black hidden" id="work" ref="target">
         <section class="container container--column hero">
             <h1 class="hero__title hero__title--red-on-black">Work Experience</h1>
+            <!--
             <p class="hero__paragraph hero__paragraph--red-on-black">[Template] A chronological ledger of professional developments, data architectures, blah blah blah</p>
+            -->
         </section>
         <section class="container container--column">
             <WorkCard v-for="experience in experiences" v-bind="experience" />
