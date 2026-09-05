@@ -4,7 +4,7 @@ import WorkExperience from './components/WorkExperience.vue';
 import Projects from './components/Projects.vue';
 import NavBar from './components/NavBar.vue';
 
-import { ref, useTemplateRef, onMounted, nextTick } from "vue";
+import { ref, useTemplateRef, onMounted} from "vue";
 
 const home = useTemplateRef('home');
 const work = useTemplateRef('work');
@@ -24,7 +24,7 @@ onMounted(() => {
     }
     else {
       entries.forEach((entry) => {
-        if(entry.intersectionRect.height > 0.80 * screenHeight) {
+        if(entry.intersectionRect.height > 0.70 * screenHeight) {
           if(entry.target.id != currentPage.value) {
             currentPage.value = entry.target.id;
           }
@@ -45,10 +45,10 @@ onMounted(() => {
     else {
       entries.forEach((entry) => {
         console.log("hi");
-        if(entry.intersectionRect.height > 0.80 * screenHeight) {
+        if(entry.intersectionRect.height > 0.70 * screenHeight) {
           console.log(entry.target.classList);
           if(entry.target.classList.contains("hidden")) {
-            entry.target.classList.remove("hidden");
+            entry.target.classList.replace("hidden", "visible");
             observer.unobserve(entry.target);
           }
         }

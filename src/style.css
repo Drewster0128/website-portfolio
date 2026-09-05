@@ -180,6 +180,11 @@ section {
   padding: 1rem 2rem;
 }
 
+.hidden > * {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
 .nav__button {
   display: inline-block;
   text-align: end;
@@ -330,6 +335,11 @@ section {
 
 .work_experience {
   background-color: var(--black-background-color);
+}
+
+.visible > * {
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
 .hero__title--left_align {

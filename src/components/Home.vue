@@ -1,6 +1,6 @@
 <script setup>
 import { useIntersectionObserver } from "@vueuse/core";
-import heroImg from "../assets/hero.png"
+import heroImg from "../assets/hero.webp"
 import {  ref, useTemplateRef, onMounted } from 'vue';
 
 const target = useTemplateRef("target");
